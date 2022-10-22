@@ -1,0 +1,25 @@
+.btn {
+  font-size: large;
+  font-weight: 500;
+  outline: var(--outline-width) solid var(--primary-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: var(--container-border-radius);
+  color: var(--text-color);
+  min-height: 32px;
+  background: var(--primary-color);
+  border: none;
+  &:hover {
+    background-color: var(--primary--on-hover-color);
+
+  }
+  &:disabled {
+    background: #737d88;
+  }
+}
+
+.btn--cta {
+  width: 100%;
+}

@@ -1,0 +1,25 @@
+@import "constants";
+
+.textfield {
+    outline: var( --outline-width) solid var(--primary-color);
+    width: 555;
+    display: block;
+    border: 0ch;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: var(--container-border-radius);
+    background-color: var(--textfield-bg-color);
+    color: var(--text-color);
+
+    &:hover {
+        background-color: var(--on-hower-textfield-bg-color);
+    }
+
+    &:focus {
+        outline-width: 1px;
+        background-color: var(--on-focus-bg-color);
+
+    }
+
+    &:empty {}
+}
