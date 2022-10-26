@@ -1,0 +1,53 @@
+.conversation {
+    border: 1px solid var(--border-color);
+    padding: 4px;
+    height: 70px;
+    display: flex;
+    gap: 8px;
+
+    &__content {
+        margin: 0%;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    &-header {
+        height: var(--header-height);
+        padding: 10px;
+        border-bottom: 1px solid var(--border-color);
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        &-text {
+            flex-shrink: 0;
+            color: var(--text-color);
+            font-size: 25px;
+        }
+
+        &__avatar {
+            flex-shrink: 0;
+        }
+
+        &__content {
+            flex: 1 1 auto;
+            display: grid;
+            gap: 4px;
+        }
+
+        &__status {
+            color: var(--primary-color);
+        }
+
+        &__heading {}
+
+        &__actions {}
+    }
+}
+
+.conversations {
+    background-color: var(--page-bg-colo-darker);
+}

@@ -13,6 +13,7 @@
   border: none;
   &:hover {
     background-color: var(--primary--on-hover-color);
+    outline: none;
 
   }
   &:disabled {
@@ -22,4 +23,11 @@
 
 .btn--cta {
   width: 100%;
+}
+
+.btn-link{
+  color: var(--primary-color);
+  background-color: transparent;
+  outline: 0;
+  border: none;
 }

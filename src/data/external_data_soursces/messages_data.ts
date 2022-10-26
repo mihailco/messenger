@@ -1,0 +1,147 @@
+
+import {InterfaceMessages} from '../../models/message_model';
+
+function getMessages(): InterfaceMessages[] {
+    return [
+       {
+            id: "0",
+            messageText: "some text",
+            userIdFrom: "0",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+       {
+            id: "123",
+            messageText: "some text",
+            userIdFrom: "221",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+       {
+            id: "123",
+            messageText: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.",
+            userIdFrom: "221",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+       {
+            id: "123",
+            messageText: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.",
+            userIdFrom: "221",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+       {
+            id: "123",
+            messageText: "some text",
+            userIdFrom: "221",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+       {
+            id: "123",
+            messageText: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.",
+            userIdFrom: "221",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+       {
+            id: "123",
+            messageText: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.",
+            userIdFrom: "221",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+       {
+            id: "123",
+            messageText: "some text",
+            userIdFrom: "221",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+       {
+            id: "123",
+            messageText: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.",
+            userIdFrom: "221",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+       {
+            id: "123",
+            messageText: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.",
+            userIdFrom: "221",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+       {
+            id: "123",
+            messageText: "some text",
+            userIdFrom: "221",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+       {
+            id: "123",
+            messageText: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.",
+            userIdFrom: "221",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+       {
+            id: "123",
+            messageText: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.",
+            userIdFrom: "221",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+       {
+            id: "123",
+            messageText: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.",
+            userIdFrom: "221",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+       {
+            id: "123",
+            messageText: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.",
+            userIdFrom: "0",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+       {
+            id: "0",
+            messageText: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.",
+            userIdFrom: "221",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+       {
+            id: "0",
+            messageText: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nulla ullam molestiae, voluptatum dolore sunt vitae ea. Pariatur temporibus laborum at autem voluptatem esse fuga recusandae aspernatur ducimus vero.",
+            userIdFrom: "0",
+            conversationIdTo: "123121",
+            createdAt: "2022.12.12",
+            typeOfMessage: "",
+        },
+    ]
+}
+function getConversations() {
+
+}
+export { getMessages }

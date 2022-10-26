@@ -1,11 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 export function AboutPage() {
-    let navigate = useNavigate(); return (
+    let navigate = useNavigate(); 
+    return (
         <div className="wrapper wrapper2">
             <header >
-                <div className="row">
-                    <h1>About Page</h1>
+                <div className="row container">
+                    <h1 >About Page</h1>
                     <div className="spacer"></div>
                     <button className="btn" onClick={() => navigate("/auth")}>
                         

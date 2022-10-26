@@ -1,25 +1,21 @@
-import React from "react";
 import "../styles/style.css"
 import { SignInForm } from './../widgets/sign_in_form';
 import { SignUpForm } from './../widgets/sign_up_form';
-import { AuthPageStates, SignInState, SignUpState, LoadingState, ErrorState } from './../state manager/auth_page_states';
+import { SignInState, SignUpState } from './../state manager/auth_page_states';
 import useStore from './../state manager/auth_page_manager';
-import { Route, Router, Routes } from "react-router-dom";
-import { AboutPage } from "./about_page";
-import shallow from 'zustand/shallow'
-import { Transition, CSSTransition, SwitchTransition, TransitionGroup } from "react-transition-group";
+import { useNavigate } from "react-router-dom";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 export function AuthPage() {
+    let navigate = useNavigate();
+
     const store = useStore();
     console.log(store.states.constructor.name)//function(
     return (
         <body>
             <div className="wrapper">
 
-                <div className="center">
-                    <div className="one-fifth-offset"> </div>
-                    {/*Haven't figured out how to fix it yet.  */}
-
+                <div className="column center">
                     <SwitchTransition mode={"out-in"}>
                         <CSSTransition
                             key={Object.is(store.states, SignInState) ? "1" : "2"}
@@ -27,11 +23,18 @@ export function AuthPage() {
                             classNames='fade'
                         >
                             <div className="container">
-                                {/* TODO: Add more widgets */}
+                                <h1>
+                                    {Object.is(store.states, SignInState) ? "Sign up" : "Sign in"}
+                                </h1>
+                                <div className="indent"></div>
                                 {Object.is(store.states, SignInState) ? <SignInForm /> : <SignUpForm />}
-                                <button className="btn" onClick={Object.is(store.states, SignUpState) ? store.setSignIn : store.setSignUp}>
+                                <div className="indent"></div>
+                                <button className="btn" onClick={() => navigate("/messages")}>
+                                    {Object.is(store.states, SignUpState) ? "Sign up" : "Sign In"}
+                                </button>
+                                <button className="btn-link" onClick={Object.is(store.states, SignUpState) ? store.setSignIn : store.setSignUp}>
                                     {Object.is(store.states, SignUpState) ? "Already have an account?" : "Create account"}
-                                    </button>
+                                </button>
                             </div>
                         </CSSTransition>
                     </SwitchTransition>

@@ -2,9 +2,8 @@
 
 .textfield {
     outline: var( --outline-width) solid var(--primary-color);
-    width: 555;
-    display: block;
     border: 0ch;
+
     padding: 8px;
     font-size: 20px;
     border-radius: var(--container-border-radius);
@@ -18,8 +17,19 @@
     &:focus {
         outline-width: 1px;
         background-color: var(--on-focus-bg-color);
-
     }
+
+    &-message-input {
+    color: var(--text-color);
+    padding: 7px;
+    flex: 15;
+    background-color: var(--textfield-bg-color);
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    
+}
 
     &:empty {}
 }
+

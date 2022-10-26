@@ -1,0 +1,38 @@
+@import 'mixins';
+.layout {
+    display: grid;
+    height: 100vh;
+
+    &__nav,
+    &__conversations,
+    &__chat {
+      overflow-y: hidden;
+    }
+}
+
+
+@include mobile {
+    .layout {
+      &__conversations {
+        display: none;
+      }
+    }
+  }
+  
+  @include desktop {
+    .layout {
+      grid-template-areas: " layout__conversations layout__chat";
+      grid-template-columns:  257px 1fr;
+  
+  
+      &__conversations {
+        grid-area: layout__conversations;
+        border-right: 1px solid var(--border-color);
+      }
+  
+      &__chat {
+        grid-area: layout__chat;
+      }
+    }
+  }
+  
