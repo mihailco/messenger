@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 export function AboutPage() {
     let navigate = useNavigate(); 
     return (
+        /*Wrapper2 плохое название, не нужно делать блоки индивидуальными только добавляя цифру к его названию*/
         <div className="wrapper wrapper2">
             <header >
                 <div className="row container">

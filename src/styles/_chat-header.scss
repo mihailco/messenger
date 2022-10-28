@@ -2,6 +2,7 @@
     height: var(--header-height);
   background-color: var(--header-bg-color);
     padding: 10px;
+  // ??
     background: var();
     border-bottom: 1px solid var(--border-color);
     box-sizing: border-box;
@@ -18,22 +19,22 @@
     &__avatar {
       flex-shrink: 0;
     }
-  
+
     &__content {
       flex: 1 1 auto;
       display: grid;
       gap: 4px;
     }
-  
+
     &__status {
       color: var(--primary-color);
     }
-  
+
     &__heading {
-  
+
     }
-  
+
     &__actions {
-  
+
     }
   }

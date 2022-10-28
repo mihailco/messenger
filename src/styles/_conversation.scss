@@ -6,6 +6,7 @@
     gap: 8px;
 
     &__content {
+        // Если значение свойства = 0, то можно не писать еденицы измерерия
         margin: 0%;
         flex: 1 1 auto;
         display: flex;
@@ -42,6 +43,7 @@
             color: var(--primary-color);
         }
 
+        // ??
         &__heading {}
 
         &__actions {}
