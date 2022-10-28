@@ -1,9 +1,5 @@
 import create from "zustand";
 import { AuthPageStates, SignInState, SignUpState, LoadingState, ErrorState } from "./auth_page_states"
-// во флаттере и использовал кубит
-//и кубит соединял с юзкейсами в домене,
-//а после их с внешним источником данных
-//тут также?
 type Store = {
     states: AuthPageStates
     setSignIn: () => void

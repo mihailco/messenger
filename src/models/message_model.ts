@@ -1,6 +1,4 @@
 export interface InterfaceMessages {
-    // да, это не модель
-    // да, сейчас это строки
     id: String;
     messageText: String;
     userIdFrom: String;

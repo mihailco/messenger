@@ -1,6 +1,5 @@
-.avatar{
+.avatar {
     flex-shrink: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,5 +8,4 @@
     border-radius: 50%;
     background-color: var(--container-bg-color);
     overflow: hidden;
-
 }

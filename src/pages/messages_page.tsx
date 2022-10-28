@@ -19,8 +19,6 @@ export default function MessengerPage() {
 
                 <div className="layout__chat chat box-scroll">
                     <div className=" chat-header">
-                        {/* TODO: добавить появление окна, показывающего информацию о пользователе */}
-                        {/* пока плохо работает */}
                         <a href={UserInformation()} >
                             <div className="avatar">101</div>
                         </a>
@@ -47,7 +45,7 @@ export default function MessengerPage() {
                 <div className="layout__conversations conversations box-scroll">
                     <div className="conversation-header">
                         <div className="icon">#</div>
-                        <input className="textfield" placeholder="search" size={15} type="search" />
+                        <input className="textfield" placeholder="search" type="search" />
                     </div>
                     <div className="box-scroll__content ">
                         {conversations.map(cv => <ConversationWidget ps={cv} />)}

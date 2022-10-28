@@ -1,25 +1,7 @@
 :root {
   --header-height: 55px;
-  --header-bg-color: #31334b;
-  --page-bg-color: #363741;
-  --page-bg-colo-darker: #1e1f24;
-  --container-bg-color: #242424;
-  --container-border-radius: 12px;
-  --text-color: #fff;
-  --outline-width: 2px;
-  --border-color: rgb(77, 72, 72);
-  --textfield-bg-color: #4d4d4d;
-  --on-hower-textfield-bg-color: #616161;
-  --on-focus-color: #434343;
-  --on-focus-bg-color: #3d3d3d;
-  --primary-color: #5e6ad2;
-  --primary--on-hover-color: #7d7f94;
-}
-
-:root {
-  --header-height: 55px;
-  --header-bg-color: #31334b;
-  --page-bg-color: #363741;
+  --header-bg-color: #2e2b44;
+  --page-bg-color: #3d3e44;
   --page-bg-colo-darker: #1e1f24;
   --container-bg-color: #242424;
   --container-border-radius: 12px;
@@ -37,6 +19,7 @@
 .textfield {
   outline: var(--outline-width) solid var(--primary-color);
   border: 0ch;
+  flex: 1;
   padding: 8px;
   font-size: 20px;
   border-radius: var(--container-border-radius);
@@ -59,6 +42,7 @@
   outline: none;
   border: none;
 }
+
 .fade-enter {
   opacity: 0;
 }
@@ -183,7 +167,7 @@
 @media screen and (min-width: 768px) {
   .layout {
     grid-template-areas: " layout__conversations layout__chat";
-    grid-template-columns: 257px 1fr;
+    grid-template-columns: 500px 1fr;
   }
   .layout__conversations {
     grid-area: layout__conversations;
@@ -209,7 +193,6 @@
   height: var(--header-height);
   background-color: var(--header-bg-color);
   padding: 10px;
-  background: var();
   border-bottom: 1px solid var(--border-color);
   box-sizing: border-box;
   display: flex;
@@ -233,6 +216,7 @@
   color: var(--primary-color);
 }
 .conversation {
+  box-sizing: border-box;
   border: 1px solid var(--border-color);
   padding: 4px;
   height: 70px;
@@ -240,7 +224,7 @@
   gap: 8px;
 }
 .conversation__content {
-  margin: 0%;
+  margin: 0;
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
@@ -275,17 +259,24 @@
   background-color: var(--page-bg-colo-darker);
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   color: var(--text-color);
-  margin: 0%;
+  margin: 0;
 }
 
 .wrapper {
   min-height: 100vh;
   background-color: var(--page-bg-color);
 }
-.wrapper2 {
+.wrapper__main {
   padding: 15px;
+  box-sizing: border-box;
 }
 
 .container {
@@ -324,20 +315,12 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
 }
 
-.one-fifth-offset {
-  height: 20vh;
-}
-
 .spacer {
   flex: 1;
 }
 
 .icon {
   color: var(--primary-color);
-}
-
-.indent {
-  height: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

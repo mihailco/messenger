@@ -30,7 +30,8 @@
 
 .chat {
     background-color: var(--page-bg-color);
-    &__header{
+
+    &__header {
         height: var(--header-height);
         background-color: var(--header-bg-color)
     }

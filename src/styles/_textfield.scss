@@ -1,9 +1,7 @@
-@import "constants";
-
 .textfield {
-    outline: var( --outline-width) solid var(--primary-color);
+    outline: var(--outline-width) solid var(--primary-color);
     border: 0ch;
-
+    flex: 1;
     padding: 8px;
     font-size: 20px;
     border-radius: var(--container-border-radius);
@@ -20,16 +18,13 @@
     }
 
     &-message-input {
-    color: var(--text-color);
-    padding: 7px;
-    flex: 15;
-    background-color: var(--textfield-bg-color);
-    border-radius: 7px;
-    outline: none;
-    border: none;
-    
-}
+        color: var(--text-color);
+        padding: 7px;
+        flex: 15;
+        background-color: var(--textfield-bg-color);
+        border-radius: 7px;
+        outline: none;
+        border: none;
 
-    &:empty {}
+    }
 }
-

@@ -1,4 +1,4 @@
-@import "constants";
+@import "variables";
 @import "textfield";
 @import "fade_animation";
 @import "button";
@@ -10,66 +10,69 @@
 @import "chat-header";
 @import "conversation";
 
-h1, h2, h3, h4, h5, h6, p {
-  // скорее всего нормалайз не так подключил
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   color: var(--text-color);
-  margin: 0%;
+  margin: 0;
 }
 
-  .wrapper{
-    min-height: 100vh;
+.wrapper {
+  min-height: 100vh;
 
-    background-color: var(--page-bg-color);
-    &2{
-      padding: 15px;
-    }
-  }
+  background-color: var(--page-bg-color);
 
-  .container {
-    overflow: hidden;
-    display: grid;
-    gap: 10px;
-    padding: 30px;
-    border-radius: var(--container-border-radius);
-    background-color: var(--container-bg-color);
+  &__main {
+    padding: 15px;
+    box-sizing: border-box;
   }
-//   body{
-//     background-color: ;
-//   }
-  .center {
-    align-items: center;
-    justify-content: center;
-  }
-  .column{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  .row {
-    display: flex;
-    gap:5px;
-  }
-  .column{
-    display: flex;
-    flex-direction: column;
+}
 
-  }
+.container {
+  overflow: hidden;
+  display: grid;
+  gap: 10px;
+  padding: 30px;
+  border-radius: var(--container-border-radius);
+  background-color: var(--container-bg-color);
+}
 
-.row{
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  gap: 5px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.one-fifth-offset{
-    //да, это может быть нерпавильно. Но я так сделал. Да, можно флексами
-    height: 20vh;
-}  
+
 .spacer {
-    flex: 1;
+  flex: 1;
 }
-.icon{
+
+.icon {
   color: var(--primary-color);
-}
-.indent{
-  height: 15px;
 }
