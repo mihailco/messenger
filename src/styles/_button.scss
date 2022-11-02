@@ -1,4 +1,5 @@
 .btn {
+  // Как правило, отдают предпочтения цифровым значениям, так проще воспринимать
   font-size: large;
   font-weight: 500;
   outline: var(--outline-width) solid var(--primary-color);
@@ -23,10 +24,12 @@
   }
 }
 
+// Модификаторы в бэме пишутся через _ + используй вложенность, как например в 22
 .btn--cta {
   width: 100%;
 }
 
+// Модификатор?
 .btn-link {
   color: var(--primary-color);
   background-color: transparent;
