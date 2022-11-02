@@ -1,4 +1,6 @@
 .chat-header {
+  box-sizing: border-box;
+
   height: var(--header-height);
   background-color: var(--header-bg-color);
   padding: 10px;
@@ -9,7 +11,9 @@
   gap: 15px;
 
   &-text {
-    flex-shrink: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    // flex-shrink: 0;
     color: var(--text-color);
     font-size: 18px;
   }
@@ -27,8 +31,4 @@
   &__status {
     color: var(--primary-color);
   }
-
-  &__heading {}
-
-  &__actions {}
 }

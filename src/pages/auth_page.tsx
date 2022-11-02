@@ -32,7 +32,7 @@ export function AuthPage() {
                                 <button className="btn" onClick={() => navigate("/messages")}>
                                     {Object.is(store.states, SignUpState) ? "Sign up" : "Sign In"}
                                 </button>
-                                <button className="btn-link" onClick={Object.is(store.states, SignUpState) ? store.setSignIn : store.setSignUp}>
+                                <button className="btn_link" onClick={Object.is(store.states, SignUpState) ? store.setSignIn : store.setSignUp}>
                                     {Object.is(store.states, SignUpState) ? "Already have an account?" : "Create account"}
                                 </button>
                             </div>

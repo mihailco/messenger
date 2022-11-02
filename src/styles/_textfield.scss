@@ -1,6 +1,7 @@
 .textfield {
+    
     outline: var(--outline-width) solid var(--primary-color);
-    border: 0ch;
+    border: 0;
     flex: 1;
     padding: 8px;
     font-size: 20px;
@@ -18,6 +19,9 @@
     }
 
     &-message-input {
+        //я не знаю как, но строка  ниже помогла))
+        width: 0;
+
         color: var(--text-color);
         padding: 7px;
         flex: 15;

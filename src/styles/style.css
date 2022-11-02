@@ -18,7 +18,7 @@
 
 .textfield {
   outline: var(--outline-width) solid var(--primary-color);
-  border: 0ch;
+  border: 0;
   flex: 1;
   padding: 8px;
   font-size: 20px;
@@ -34,6 +34,7 @@
   background-color: var(--on-focus-bg-color);
 }
 .textfield-message-input {
+  width: 0;
   color: var(--text-color);
   padding: 7px;
   flex: 15;
@@ -85,12 +86,7 @@
 .btn:disabled {
   background: #737d88;
 }
-
-.btn--cta {
-  width: 100%;
-}
-
-.btn-link {
+.btn_link {
   color: var(--primary-color);
   background-color: transparent;
   outline: 0;
@@ -167,7 +163,7 @@
 @media screen and (min-width: 768px) {
   .layout {
     grid-template-areas: " layout__conversations layout__chat";
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 300px 1fr;
   }
   .layout__conversations {
     grid-area: layout__conversations;
@@ -190,6 +186,7 @@
 }
 
 .chat-header {
+  box-sizing: border-box;
   height: var(--header-height);
   background-color: var(--header-bg-color);
   padding: 10px;
@@ -200,7 +197,8 @@
   gap: 15px;
 }
 .chat-header-text {
-  flex-shrink: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
   color: var(--text-color);
   font-size: 18px;
 }
@@ -215,6 +213,7 @@
 .chat-header__status {
   color: var(--primary-color);
 }
+
 .conversation {
   box-sizing: border-box;
   border: 1px solid var(--border-color);

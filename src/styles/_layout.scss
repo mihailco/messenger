@@ -5,6 +5,7 @@
   // Не стоит писать 100vh без надобности, здесь всё легко делается и без этого
   // у меня без этого скролится вся страница и всё съезжает
   // Точно? Я проверил и вроде всё нормально
+  //ааааааа всё равно неправильно
   height: 100vh;
 
   &__nav,
@@ -26,7 +27,7 @@
 @include desktop {
   .layout {
     grid-template-areas: " layout__conversations layout__chat";
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 300px 1fr;
 
 
     &__conversations {

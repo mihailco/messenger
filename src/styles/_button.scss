@@ -22,17 +22,11 @@
   &:disabled {
     background: #737d88;
   }
-}
 
-// Модификаторы в бэме пишутся через _ + используй вложенность, как например в 22
-.btn--cta {
-  width: 100%;
-}
-
-// Модификатор?
-.btn-link {
+  &_link {
   color: var(--primary-color);
   background-color: transparent;
   outline: 0;
   border: none;
-}
+}}
+
